@@ -1,0 +1,120 @@
+.about {
+    width: 100% !important;
+    height: calc(100vh - 76px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.textSide {
+    width: 50%;
+}
+
+h1 {
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+    font-size: 50px !important;
+}
+
+h3 {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+}
+
+p {
+    width: 80%;
+    font-size: 20px !important;
+    line-height: 25px !important;
+    margin-bottom: 20px !important;
+}
+
+a {
+
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    padding: 5px 20px !important;
+    border-radius: 20px !important;
+    font-size: .9rem !important;
+}
+
+.imageSide {
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imageSide img {
+    width: 80%;
+    transform: translateY(-10px);
+    animation: jk 1.7s ease-in-out infinite alternate;
+}
+
+@keyframes jk {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .about{
+        height: 100% !important;
+        flex-direction: column;
+        padding-top: 20px !important;
+    }
+    .imageSide{
+        width: 70% !important;
+    }
+    p{
+        width: 100% !important;
+    }
+} 
+
+@media screen and (max-width: 510px){
+    .about{
+        width: 100% !important;
+    }
+    .imageSide{
+        width: 90% !important;
+    }
+    .textSide{
+        width: 100% !important;
+        padding: 30px 0 !important;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    h3{
+        width: 100% !important;
+        font-size: 25px !important;
+    }
+    p{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 300px){
+    h1{
+        font-size: 30px !important;
+    }
+    h3{
+        width: 100% !important;
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 18px !important;
+    }
+}

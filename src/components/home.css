@@ -1,0 +1,151 @@
+.home {
+    height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+}
+
+.textSide {
+    width: 60% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px !important;
+}
+.h3{
+    font-size: 30px !important;
+}
+.h1{
+    font-size: 70px !important;
+}
+.parag{
+    font-size: 1rem !important;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: bolder !important;
+    padding: 5px 20px;
+    border-radius: 20px !important;
+    font-size: .9rem !important;
+}
+
+.imageSide {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 90%;
+    transform: translateY(-10px);
+    animation: jk 1.7s ease-in-out infinite alternate;
+}
+
+@keyframes jk {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .home {
+        width: 100%;
+        height: 100% !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .textSide {
+        width: 100% !important;
+        text-align: center;
+        padding: 30px 30px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1 {
+        font-size: 50px !important;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .parag {
+        width: 90% !important;
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .imageSide{
+        width: 90% !important;
+        overflow: visible !important;
+    }
+}
+@media screen and (max-width: 600px){
+    .home{
+        padding: 0px;
+    }
+    .h1{
+        font-size: 35px !important;
+    }
+    .h3{
+        font-size: 20px !important;
+    }
+    .parag{
+        width: 100%;
+        margin: 0;
+    }
+    .btn{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .home{
+        padding: 20px 0px;
+    }
+    .h1{
+        font-size: 27px !important;
+    }
+    .h3{
+        font-size: 15px !important;
+    }
+}
+
+
+@media screen and (max-width: 285px){
+    .home{
+        padding: 20px 0px;
+    }
+    .h1{
+        font-size: 20px !important;
+        margin-bottom: 5px !important;
+    }
+    .h3{
+        font-size: 15px !important;
+        margin-bottom: 5px !important;
+    }
+    .parag{
+        width: 100%;
+    }
+}
